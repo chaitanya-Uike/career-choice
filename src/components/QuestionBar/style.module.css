@@ -1,0 +1,19 @@
+.questionBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.questionBlob {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.activeQuestion {
+  background-color: lightgreen;
+}
