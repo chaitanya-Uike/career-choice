@@ -1,26 +1,874 @@
 {
     "questions" : [
         {
-            "question" : "Your Gender?",
+            "question" : "I like fixing or repairing broken items.",
             "options" : [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5"
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
             ],
-            "field":"Science"  
+            "field":"engg"  
         },
         {
-            "question" : "Are you retarded?",
+            "question" : "I like to learn about the different commands for the computer to execute.",
             "options" : [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5"
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
             ],
-            "field":"Science" 
+            "field":"engg"  
+        },
+        {
+            "question" : "I find it interesting to assist or accompany someone in any type of repairs.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I would like to develop a mobile based app.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy working with tools like a hammer, screw-driver, spanner, wrench etc.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I would like to learn a computer programming language (Java, GW-Basic, etc.)",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy assisting someone who is repairing a bike or a car.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I am interested in knowing more about the hardware and software functions in a computer.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy reading about new researches in various fields.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I like to follow set routine procedures even if they seem repetitive.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy solving math problems.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I like activities which involve dealing with calculations",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I like to take lead in a project and tell others what to do.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I like to create a step-by-step detailed plan.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy being a class monitor or a team leader.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "It would be interesting to monitor others to ensure that they do their allotted work appropriately.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy doing science projects.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I enjoy conducting experiments on chemicals and observing their reactions.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I would like to be a trainer who trains employees in a company",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I would like to work on discovering a new scientific fact or inventing a solution.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I prefer to take lead in group discussions.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "Are you passionate to work in a technical role.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"engg"  
+        },
+        {
+            "question" : "I like to take care of an ill person.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I take interest in helping others with their personal or emotional problems.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "It would be fulfilling to help mentally ill patients live normal lives.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "It would be interesting to observe marine plants and animals in their natural habitat.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I like to watch birds of different species in their natural habitat.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I would like to go on an expedition for finding rare plants or organisms.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I have a keen interest in cultivating plants and trees.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "Would you like to work in healthcare with detailed knowledge?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "Would you like to know about different types of medicine?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "Are you interested in knowing how your heart works?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I would like to work in farm.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"medical"  
+        },
+        {
+            "question" : "I would like to design a dress or jewellery.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I am interested in crafts to create something artistic.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy typing a document accurately.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would be interested to solve complaints of customers.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy decorating my scrapbook with various cut-outs and drawings",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I am interested in learning the art of photography",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy editing and decorating photos.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I like to draw cartoons or caricatures.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I like to use language to express my thoughts, ideas and imaginations.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "Teaching reading and writing skills to illiterate people interests me.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy / would have enjoyed campaigning for school elections.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would enjoy writing articles for a magazine.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would enjoy documenting my experiences in the form of essays and blogs.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy reading novels by well-known authors.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I enjoy exploring the hidden meaning of a poem.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would be interested to entertain an audience as a comedian, magician, musician, actor, etc.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would enjoy teaching a class of students.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I would like to learn or play a musical instrument.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "Are you interested in fashion designing?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "Are you interested to make beautiful painting?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "Are you interested in Dramatic art?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "Are you interested in magical shows?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"arts"  
+        },
+        {
+            "question" : "I prefer activities where I can interact or respond to the queries of people and help them with their requests.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I like to convince others about my point of view.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I would be interested to solve complaints of customers.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I would enjoy interacting with customers to understand their needs.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I enjoy checking documents to spot errors.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I think receptionists have an interesting job.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I like to engage in logical arguments with someone to prove my point.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "It is interesting to maintain records in an accurate and up-to-date manner.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I enjoy being a part of a sports team",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I prefer to keep an accurate track of my budget and expenses.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I enjoy participating in outdoor games, sports and camps.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "It would be interesting to sell a product to someone.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I take interest in recording my expenses on a daily basis",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I look forward to spending time playing or practising sports.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I look forward to learning any new sport.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I would be interested in convincing someone about benefits of a product.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I like to organize my belongings on a day-to day basis.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I like to study numbers, tables and graphs",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I take interest in creating graphs and charts from given data.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I enjoy working with fractions, decimals and Venn diagrams.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "Would you like to stop crimes?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "Would you like to manage all crime problems of the state?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "Would you like to handle financial services?",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
+        },
+        {
+            "question" : "I enjoy defending my point of view using logical arguments.",
+            "options" : [
+                "Strongly Agree",
+                "Agree",
+                "Not sure",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "field":"commerse"  
         }
+        
     ]
 }
