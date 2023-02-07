@@ -1,0 +1,13 @@
+.radioBtn {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+
+  svg{
+    position: absolute;
+    top: -5px;
+  }
+}

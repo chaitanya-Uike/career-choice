@@ -1,0 +1,23 @@
+.mcqContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+
+  .question{
+    padding: 20px 40px 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.optionContainer {
+  display: flex;
+  gap: 30px;
+}

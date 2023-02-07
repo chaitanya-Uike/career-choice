@@ -1,0 +1,35 @@
+.questionBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100vw;
+  overflow-x: auto;
+  padding: 10px 20px;
+}
+
+.questionBlob {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.activeQuestion {
+  background-color: lightgreen;
+}
+
+.questionBar::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+.questionBar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.questionBar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 5px;
+}
