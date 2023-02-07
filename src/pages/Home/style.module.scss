@@ -1,0 +1,31 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+.getStartedBtn{
+    text-decoration: none;
+    background-color: lightgreen;
+    padding: 20px 30px;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    border-radius: 10px;
+    color: green;
+    font-size: 18px;
+    font-weight: 600;
+}

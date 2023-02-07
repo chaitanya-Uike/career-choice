@@ -17,8 +17,12 @@
   cursor: pointer;
 }
 
-.activeQuestion {
+.questionTicked{
   background-color: lightgreen;
+}
+
+.activeQuestion {
+  border: 5px solid green;
 }
 
 .questionBar::-webkit-scrollbar {

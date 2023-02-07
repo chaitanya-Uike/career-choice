@@ -3,12 +3,13 @@ import SVGIcons from "../SVGIcons"
 
 interface Props {
     isChecked: boolean
-    index: number
+    index: number,
+    onClickHandler: (index: number) => void
 }
 
-function RadioButton({ isChecked }: Props) {
+function RadioButton({ isChecked, index, onClickHandler }: Props) {
     return (
-        <div className={style.radioBtn}>
+        <div className={style.radioBtn} onClick={() => { onClickHandler(index) }}>
             {isChecked && <SVGIcons.Tick width={20} height={20} color="green" />}
         </div>
     )

@@ -5,9 +5,10 @@ interface Props {
     numberOfQuestion: number
     activeQuestion: number
     setActiveQuestion: Dispatch<SetStateAction<number>>
+    selectedOptions: number[]
 }
 
-const QuestionBar = ({ numberOfQuestion, activeQuestion, setActiveQuestion }: Props) => {
+const QuestionBar = ({ numberOfQuestion, activeQuestion, setActiveQuestion, selectedOptions }: Props) => {
 
     const activeBlobRef = useRef<HTMLDivElement | null>(null)
 
@@ -24,7 +25,7 @@ const QuestionBar = ({ numberOfQuestion, activeQuestion, setActiveQuestion }: Pr
                         if (activeQuestion === questionNo)
                             activeBlobRef.current = el
                     }}
-                        className={`${style.questionBlob} ${activeQuestion === questionNo ? style.activeQuestion : ""}`}
+                        className={`${style.questionBlob} ${activeQuestion === questionNo ? style.activeQuestion : ""} ${selectedOptions[questionNo] !== -1 ? style.questionTicked : ""}`}
                         key={questionNo}
                         onClick={() => {
                             setActiveQuestion(questionNo)
