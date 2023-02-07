@@ -4,18 +4,26 @@ import questionsJson from "./questions.json"
 import MCQContainer from "../../components/MCQ"
 import style from "./style.module.scss"
 import SVGIcons from "../../components/SVGIcons"
-import { useNavigate } from "react-router-dom"
+import { CLIENT_RENEG_LIMIT } from "tls"
 
 export interface MCQ {
     question: string,
-    options: string[]
+    options: string[],
+    field: string
+}
+
+interface QuestionMapping {
+    [field: string]: number[]
+}
+
+interface Scores {
+    [field: string]: number
 }
 
 const Test = () => {
     const [questions] = useState<MCQ[]>(questionsJson.questions)
     const [activeQuestion, setActiveQuestion] = useState<number>(0)
     const [selectedOptions, setSelectedOptions] = useState<number[]>(new Array(questions.length).fill(-1))
-    const navigate = useNavigate()
 
     const allQuestionsSolved = !selectedOptions.some(value => value === -1)
 
@@ -54,7 +62,24 @@ const Test = () => {
 
             {allQuestionsSolved &&
                 <button className={style.submitBtn} onClick={() => {
-                    // navigate("/result")
+                    const questionMapping: QuestionMapping = {}
+
+                    questions.forEach((question, index) => {
+                        if (!questionMapping[question.field])
+                            questionMapping[question.field] = [selectedOptions[index]]
+                        else
+                            questionMapping[question.field].push(selectedOptions[index])
+                    })
+
+                    const result: Scores = {}
+
+                    for (const key in questionMapping) {
+                        const data = questionMapping[key]
+                        result[key] = data.reduce((acc, value) => acc + (100 - value * 25), 0) / data.length;
+                    }
+
+                    console.log(result)
+
                 }}>Finish Test</button>
             }
         </div>
