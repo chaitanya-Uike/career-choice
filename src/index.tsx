@@ -11,20 +11,27 @@ import {
 import Home from './pages/Home';
 import Test from './pages/Test';
 import Result from './pages/Result';
+import App from './App';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/result",
+        element: <Result />,
+      },
+      {
+        path: "/test",
+        element: <Test />,
+      },
+    ],
   },
-  {
-    path: "/test",
-    element: <Test />
-  },
-  {
-    path: "/result",
-    element: <Result />
-  }
 ]);
 
 

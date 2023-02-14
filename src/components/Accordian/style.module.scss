@@ -1,0 +1,30 @@
+.accordian{
+    border: 1px solid gray;
+    width: 600px;
+    border-radius: 8px;
+    margin-left: 50px;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid gray;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 8px;
+
+        svg{
+            cursor: pointer;
+        }
+    }
+
+    .content{
+        overflow: hidden;
+        padding: 30px 60px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+}
