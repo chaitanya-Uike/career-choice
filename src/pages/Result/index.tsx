@@ -108,6 +108,87 @@ const items5 = [
     'Certificate Courses'
 ]
 
+const items6 = [
+    'Bachelor of Medicine, Bachelor of Surgery [MBBS]',
+    'Bachelor of Physiotherapy [BPT]',
+    'Bachelor of Ayurvedic Medicine and Surgery [BAMS]',
+    'Diploma in Medical Laboratory Technology [DMLT]',
+    'Bachelor in Medical Laboratory Technology [BMLT]',
+    'Bachelor of Homeopathic Medicine & Surgery [BHMS]',
+    'Bachelor of Optometry [B.Optom]',
+    'Diploma in Physiotherapy [DPT]',
+    'Bachelor of Occupational Therapy [BOT]',
+    'Bachelor in Audiology and Speech - Language Pathology [BASLP]',
+    'Bachelor of Science [B.Sc] (Perfusion Technology)',
+    'Diploma in X-Ray Technology',
+    'Diploma in Medical Radio Diagnosis [DMRD]',
+    'Bachelor of Science [B.Sc] (Medical Imaging Technology)',
+    'Diploma in Clinical Pathology [DCP]',
+    'Bachelor of Science [B.Sc] (Dialysis)',
+    'Diploma in Anaesthesia [DA]',
+    'Bachelor of Science [B.Sc] {Hons.} (Physiology)',
+    'Bachelor of Science [B.Sc] (Industrial Microbiology)',
+    'Diploma in Otorhinolaryngology [DLO]',
+    'Diploma in Nursing',
+    'Bachelor of Science [B.Sc] (Respiratory Therapy)',
+    'Diploma in Operation Theatre Techniques',
+    'Diploma in Dialysis Techniques',
+    'Bachelor of Unani Medicine & Surgery(BUMS)',
+    'Diploma in Radiography',
+    'Bachelor of Science [B.Sc] (Radiography)',
+    'Certificate Course in Physiotherapy',
+    'Bachelor of Science [B.Sc] (Imaging Technology Radiography)',
+    'Diploma in Radiology Therapy [DMRT]',
+    'Bachelor of Siddha Medicine & Surgery [BSMS]',
+    'Diploma in Occupational Therapy',
+    'Certificate in Laboratory Techniques [CPLT]',
+    'Bachelor of Science [B.Sc] (Occupational Therapy)',
+    'Bachelor of Science [B.Sc] (Pathology)',
+    'Bachelor of Science [B.Sc] (Audiology)',
+    'Bachelor of Dental Surgery (BDS)',
+    'Bachelor of Veterinary Science(B.V.Sc)',
+
+]
+
+const items7 = [
+    'Bachelor of Fine Arts',
+    'BFA Painting',
+    'BA in Drawing & Painting',
+    'BVA Applied Arts',
+    'Bachelor of Performing Arts',
+    'Certificate course in Fine Arts',
+    'Diploma in Fine Arts',
+    'Certificate in Crafting Creative Communications',
+    'Certificate in Visual Arts',
+    'Certificate in Performing Arts',
+    'Certificate in Drawing and Animation',
+    'Certificate in Sculpture',
+    'Certificate in Plate Making and Offset Printing',
+    'Diploma in Performing Arts',
+    'Diploma in Music',
+    'Advanced Diploma in Carnatic Music',
+    'BA Music',
+    'BFA in Photography',
+    'BFA in Digital Arts',
+]
+
+const items8 = [
+    'BSc in Horticulture',
+    'BSc in Plant Pathology',
+    'BSc in Food Science',
+    'BSc in Dairy Science',
+    'BSc in Plant Science',
+    'BSc in Agricultural Biotechnology',
+    'BSc in Fisheries Sciences',
+    'BSc in Forestry',
+    'BE or BTech in Agricultural and Food Engineering',
+    'BE or BTech in Agricultural Information Technology',
+    'BE or BTech in Agricultural Engineering',
+    'BE or BTech in Dairy Technology',
+    'BE or BTech in Agriculture and Dairy Technology',
+]
+
+
 const Result = () => {
     const { result } = useContext(AppContext) as appContextType
 
@@ -126,8 +207,8 @@ const Result = () => {
 
     return (
         <div>
-            <div>
-                <h3>Result</h3>
+            <div className={style.header}>
+                <h2>Result :</h2>
             </div>
             <div style={{ display: "grid", placeItems: "center" }}>
                 <BarGraph data={getData()} />
@@ -137,8 +218,10 @@ const Result = () => {
                 <Accordian title="B.E / B.Tech" items={items2} />
                 <Accordian title="UG Courses for Arts Students" items={items3} />
                 <Accordian title="UG Courses available after 12th Commerce" items={items4} />
-                <Accordian title="UG Courses available after 12th Commerce" items={items4} />
                 <Accordian title="professional courses to pursue after 12th" items={items5} />
+                <Accordian title="Medical Courses" items={items6} />
+                <Accordian title="Fine Arts Courses" items={items7} />
+                <Accordian title="Agriculture Courses" items={items8} />
             </div>
         </div>
     )

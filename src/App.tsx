@@ -1,5 +1,6 @@
 import { createContext, useState, Dispatch, SetStateAction } from "react"
 import { Outlet } from 'react-router-dom'
+import style from "./app.module.scss"
 
 interface Hash {
     [key: string]: number
@@ -17,7 +18,7 @@ const App = () => {
     const [result, setResult] = useState<Hash>({})
     return (
         <div>
-            <div>
+            <div className={style.header}>
                 <h1>Career Survey</h1>
             </div>
             <AppContext.Provider value={{ result, setResult }}>
