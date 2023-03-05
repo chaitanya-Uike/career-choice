@@ -1,11 +1,11 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { AppContext, appContextType } from "../../App"
 import BarGraph from "../../components/BarGraph"
 import Accordian from "../../components/Accordian"
 import style from "./style.module.scss"
 
 
-const items1 = [
+const general = [
     'BE/B.Tech- Bachelor of Technology',
     'B.Arch- Bachelor of Architecture',
     'BCA- Bachelor of Computer Applications',
@@ -25,7 +25,7 @@ const items1 = [
 
 ]
 
-const items2 = [
+const engg = [
     'Aeronautical Engineering',
     'Automobile Engineering',
     'Civil Engineering',
@@ -65,7 +65,7 @@ const items2 = [
     'Marine Engineering',
     'Big Data Analytics']
 
-const items3 = [
+const arts1 = [
     'BBA- Bachelor of Business Administration',
     'BMS- Bachelor of Management Science',
     'BFA- Bachelor of Fine Arts',
@@ -84,31 +84,17 @@ const items3 = [
     'BA in History'
 ]
 
-const items4 = [
+const commerce = [
     'B.Com- Bachelor of Commerce',
     'BBA- Bachelor of Business Administration',
     'B.Com (Hons.)',
     'BA (Hons.) in Economics',
     'Integrated Law Program- B.Com LL.B',
-    'Integarted Law Program- BBA LL.B'
-]
-
-const items5 = [
+    'Integarted Law Program- BBA LL.B',
     'CA- Chartered Accountancy',
-    'CS- Company Secretary',
-    'Bachelor of Design in Accessory Design',
-    'fashion Design, Ceramic Design',
-    'Leather Design',
-    'Graphic Design',
-    'Industrial Design',
-    'Jewellery Design',
-    'Bachelor in Foreign Language',
-    'Diploma Courses',
-    'Advanced Diploma Courses',
-    'Certificate Courses'
 ]
 
-const items6 = [
+const medical1 = [
     'Bachelor of Medicine, Bachelor of Surgery [MBBS]',
     'Bachelor of Physiotherapy [BPT]',
     'Bachelor of Ayurvedic Medicine and Surgery [BAMS]',
@@ -150,7 +136,7 @@ const items6 = [
 
 ]
 
-const items7 = [
+const arts2 = [
     'Bachelor of Fine Arts',
     'BFA Painting',
     'BA in Drawing & Painting',
@@ -172,7 +158,7 @@ const items7 = [
     'BFA in Digital Arts',
 ]
 
-const items8 = [
+const medical2 = [
     'BSc in Horticulture',
     'BSc in Plant Pathology',
     'BSc in Food Science',
@@ -191,6 +177,8 @@ const items8 = [
 
 const Result = () => {
     const { result } = useContext(AppContext) as appContextType
+    const [email, setEmail] = useState("")
+    const [mailSent, setMailSent] = useState(false)
 
 
     const getData = () => {
@@ -205,6 +193,33 @@ const Result = () => {
         return data
     }
 
+    async function sendMail() {
+        let resultString = ""
+        for (const key in result) {
+            resultString += key + " : " + result[key].toPrecision(2) + "%\n"
+        }
+
+        const res = await fetch("http://localhost:5000/mail", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email,
+                result: resultString
+            })
+        })
+
+        if (res.ok) {
+            setMailSent(true)
+        }
+    }
+
+
+    let max = 0;
+    for (const key in result)
+        max = Math.max(max, result[key])
+
     return (
         <div>
             <div className={style.header}>
@@ -214,16 +229,25 @@ const Result = () => {
                 <BarGraph data={getData()} />
             </div>
             <div className={style.accordianContainer}>
-                <Accordian title="UG Courses available after 12th Science" items={items1} />
-                <Accordian title="B.E / B.Tech" items={items2} />
-                <Accordian title="UG Courses for Arts Students" items={items3} />
-                <Accordian title="UG Courses available after 12th Commerce" items={items4} />
-                <Accordian title="professional courses to pursue after 12th" items={items5} />
-                <Accordian title="Medical Courses" items={items6} />
-                <Accordian title="Fine Arts Courses" items={items7} />
-                <Accordian title="Agriculture Courses" items={items8} />
+                <Accordian title="UG Courses available after 12th Science" items={general} />
+                {max === result["engg"] && <Accordian title="B.E / B.Tech" items={engg} />}
+                {max === result["arts"] && <Accordian title="UG Courses for Arts Students" items={arts1} />}
+                {max === result["commerse"] && <Accordian title="UG Courses available after 12th Commerce" items={commerce} />}
+                {max === result["medical"] && <Accordian title="Medical Courses" items={medical1} />}
+                {max === result["arts"] && <Accordian title="Fine Arts Courses" items={arts2} />}
+                {max === result["medical"] && <Accordian title="Agriculture Courses" items={medical2} />}
             </div>
-        </div>
+            <div className={style.mailSender}>
+                <p>Send result to your mail</p>
+                <input
+                    type="email"
+                    placeholder="example@email.com"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value) }} />
+                <button onClick={sendMail} > send mail</button>
+                {mailSent && <h3>mail sent successfully</h3>}
+            </div>
+        </div >
     )
 }
 
