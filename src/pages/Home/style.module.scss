@@ -1,9 +1,12 @@
 .mainContainer{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 62.4px);
 }
 
 .section{
@@ -18,6 +21,7 @@
 }
 
 .getStartedBtn{
+    position: absolute;
     text-decoration: none;
     background-color: lightgreen;
     padding: 20px 30px;
@@ -28,4 +32,6 @@
     color: green;
     font-size: 18px;
     font-weight: 600;
+    right: 200px;
+    bottom: 50px;
 }

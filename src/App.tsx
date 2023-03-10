@@ -17,13 +17,15 @@ export const AppContext = createContext<appContextType | null>(null)
 const App = () => {
     const [result, setResult] = useState<Hash>({})
     return (
-        <div>
-            <div className={style.header}>
-                <h1>Career Survey</h1>
+        <div className={style.mainContainer}>
+            <div className={style.home}>
+                <div className={style.header}>
+                    <h1>Career Survey</h1>
+                </div>
+                <AppContext.Provider value={{ result, setResult }}>
+                    <Outlet />
+                </AppContext.Provider>
             </div>
-            <AppContext.Provider value={{ result, setResult }}>
-                <Outlet />
-            </AppContext.Provider>
         </div>
     )
 }

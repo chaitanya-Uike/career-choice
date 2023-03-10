@@ -3,7 +3,7 @@ import style from "./style.module.scss"
 
 interface Props {
     title: string
-    items: string[]
+    items: { title: string, link: string }[]
 }
 
 const Accordian = ({ title, items }: Props) => {
@@ -20,7 +20,9 @@ const Accordian = ({ title, items }: Props) => {
             </div>
             <div className={style.content} style={{ display: show ? "inherit" : "none" }}>
                 <ul>
-                    {items.map((item, index) => <li key={index}>{item}</li>)}
+                    {items.map((item, index) => <li key={index}>
+                        <a target="_blank" rel="noreferrer" href={item.link}>{item.title}</a>
+                    </li>)}
                 </ul>
             </div>
         </div>
