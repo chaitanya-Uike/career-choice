@@ -1,6 +1,9 @@
 .header{
     padding: 10px 20px;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .mainContainer{
